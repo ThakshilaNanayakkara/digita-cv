@@ -1,21 +1,88 @@
+<!doctype html>
 <html>
     <head>
-        <title>ThakshilaNanayakkara-curriculum_vitae</title>:
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>ThakshilaNanayakkara-curriculum_vitae</title>
+        <meta http-equiv="X-UA_Compatible" content="Ie-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-<div class="profile-img">
-    <img src="images/1.jpg">
+<section id="main">
+<nav>
+    <a href="#" class="logo">LOGO</a>
+
+	<div class="toggle"></div>
+	
+    <ul class="menu">
+<li><a href="#main" class="active">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#contact-form">Contact</a></li>
+    </ul>
+    <a href="#" class="lan">En</a>
+</nav>
+<div class="name">
+    <p>Hello</p>
+    <h1>I'm <font color="#17d1ac">Thakshila Nanayakkara</font> </h1>
+    <p class="details">This is my web page. It will show you my proffetional life</p>
+    <a href="#" class="cv-btn">Download cv</a>
 </div>
+	<div class="social">
+	<a href="#"><i class="fab fa-facebook-f"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-whatsapp"></i></a>
+	</div>
+	<div class="arrow"></div>
+</section>
+<section id="about">
+		<div class="about-text">
+	<h1>About me</h1>
+	<h2>Undergraduate</h2>
+	<p>I am an undergraduate of Sri jayewardhanepura University at the faculty of Applied Sciences.</p>
+    <button>More Details</button>
+</div>
+        </section>
+ <section id="resume">
+<h1 class="r-heading">My Curriculum Vitae</h1>
+ </section> 
+ <section id="contact-btn">
+     <h1>Do you satisfy with my qualifications ?</h1>
+     <a href="#contact-form">Contact Me</a>
+ </section>     
+ <section id="contact-form">
+     <form>
+         <div class="contact-left">
+         <div class="f-name">
+            <font>Email</font>
+            <input type="email">
+         </div>
 
-<div class="profile-info">
-    <h1>
-        Thakshila Nanayakkara
-    </h1>
-</div>        
-
-
-
+         <div class="f-email">
+            <font>Subject</font>
+            <input type="text">
+         </div>
+         </div>
+         <div class="contact-right">
+             <div class="message">
+                 <font>Message</font>
+                 <textarea name="message" cols="20" rows="5"></textarea>
+             
+				 <button>Submit</button>
+			 </div>
+         </div>
+     </form>
+ </section>
+		<script type="text/javascript" src="JQuerry.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$('.toggle').click(function(){
+		$('.toggle').toggleClass('active')
+			$('nav ul').toggleClass('active-menu')
+		})
+		})
+		</script>
     </body>
 </html>
