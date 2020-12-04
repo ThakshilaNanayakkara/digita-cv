@@ -452,17 +452,19 @@ flex-direction: column;
 justify-content: space-between;
 border-left: 1px solid rgba(255,255,255,0.08);
 }
-.f-name, .f-email{
+.f-name, .f-email, .f-subject{
 display: flex;
 flex-direction: column;
 }
 .f-name font,
-.f-email font{
+.f-email font,
+.f-subject{
     color: #bfbfbf;
     font-size: 22px;
 }
 .f-email input,
-.f-name input{
+.f-name input,
+.f-subject input{
     height: 30px;
     width: 250px;
     border: none;
@@ -473,13 +475,14 @@ flex-direction: column;
     margin: 10px 0px;
 }
 .f-name input:focus,
-.f-email input:focus{
+.f-email input:focus,
+.f-subject input:focus{
     border-bottom: 1px solid #17d1ac;
     transition: all ease 0.5s;
 }
 .message font{
-    font-size: 18px;
-    color: #4e4e4e;
+    font-size: 22px;
+    color: #bfbfbf;
 }
 .message{
     margin: 20px;
@@ -633,12 +636,14 @@ flex-grow: 1;
 		width: 100%;
 		border: none;
 	}
-	f-email, 
-	f-name{
+	.f-email, 
+    .f-name,
+    .f-subject{
 		width: 100%;
 	}
 	.f-email input,
-	.f-name input{
+    .f-name input,
+    .f-subject input{
 	width: 100%;
 		border: none;
 		background-color: #262626 !important;

@@ -157,27 +157,35 @@
 </ul>
 </div>
  </section>
+ <section id="projects">
+     <div class="p-heading">
+         <h1>Projects & Researches</h1>
+     </div>
+ </section>
  <section id="contact-btn">
      <h1>Do you satisfy with my qualifications ?</h1>
      <a href="#contact-form">Contact Me</a>
  </section>     
- <section id="contact-form">
-     <form>
+ <section id="contact-form"> 
+     <form id="contact-form" method="post" action="contact-handler.php">
          <div class="contact-left">
-         <div class="f-name">
-            <font>Email</font>
-            <input type="email">
-         </div>
-
          <div class="f-email">
+            <font>Email</font>
+            <input type="email" placeholder="Type your email">
+         </div>
+         <div class="f-name">
+            <font>Name</font>
+            <input type="text" placeholder="Type your/company name">
+         </div>
+         <div class="f-subject">
             <font>Subject</font>
-            <input type="text">
+            <input type="text" placeholder="Type the topic">
          </div>
          </div>
          <div class="contact-right">
              <div class="message">
                  <font>Message</font>
-                 <textarea name="message" cols="20" rows="5"></textarea>
+                 <textarea name="message" cols="20" rows="5" placeholder="Write me..."></textarea>
              
 				 <button>Submit</button>
 			 </div>
