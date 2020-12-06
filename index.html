@@ -11,7 +11,7 @@
     <body>
 <section id="main">
 <nav>
-    <a href="#" class="logo">TN</a>
+    <a href="#" class="logo">TNN</a>
 
 	<div class="toggle"></div>
 	
@@ -30,10 +30,10 @@
     <h1>I'm </h1>
     <h1><font color="#17d1ac" style="font-family:Georgia, Comic Sans MS;">Thakshila Nanayakkara</font></h1>
     <p class="details">Wellcome to my web page</p>
-    <a href="#" class="cv-btn">Download cv</a>
+    <a href="ThakshilaNanayakkara-curriculum_vitae.html" download><button type="button" class="cv-btn" style="float:right;">Download cv</button></a>
 </div>
 	<div class="social">
-	<a href="#"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://github.com/ThakshilaNanayakkara/digital-cv" target="_blank"><i class="fab fa-facebook-f"></i></a>
 	<a href="#"><i class="fab fa-twitter"></i></a>
 	<a href="#"><i class="fab fa-instagram"></i></a>
 	<a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -44,14 +44,34 @@
 		<div class="about-text">
 	<h1>About me</h1>
 	<h2>Undergraduate</h2>
-	<p>I, Thakshila Nanayakkara, am a passionate, self-motivated, reliable, responsible and hard-working person with strong team working skills and ability to adapt to challenging situations. I am able to work well both in team environments, and as an individual.</p>
-    <ul><li><a href="#resume"><button>More Details >>></button></a></li></ul>
+	<p>I, Thakshila Nanayakkara, am a passionate, self-motivated, reliable, responsible and hard-working person with strong team working skills and ability to adapt to challenging situations. I am able to work well both in team environments, and as an individual.
+    <span id="dots"></span><span id="more">none to appear</span></p>
+    <button onclick="mybtn()" type="button" id="mybtn">More Details >>></button>
 </div>
-        </section>
+</section>
+<script type="text/javascript">
+    var i=0;
+    function mybtn(){
+        if(!i){
+            document.getElementById("more").style.display ="inline";
+            document.getElementById("dots").style.display ="none";
+            document.getElementById("mybtn").innerHTML="More Details >>>";
+            
+            i=1;
+        }
+        else{
+            document.getElementById("more").style.display ="none";
+            document.getElementById("dots").style.display ="inline";
+            document.getElementById("mybtn").innerHTML="More Details >>>";
+            
+            i=0;
+        }
+    }
+</script>
  <section id="resume">
     <div class="r-heading">
         <h1>My Curriculum Vitae</h1>
-        <p>Academic qualifications</p>
+        <p><b>Academic qualifications</b></p>
         <div class="r-container2">
             <div class="r-box2">
                 <ul class="r-timeline">
@@ -76,12 +96,12 @@
                             <p>Sanghamiththa Girls' College, Galle<br>
                                 <b>Subjects:</b>
                                 Buddhism-A | Sinhala-A | English-A | Science-B | Mathematics-A |
-                                 History-A |<br> Tamil-C | English Literature-B | Health Science-A</p>
+                                 History-A | Tamil-C | English Literature-B | Health Science-A</p>
                     </li>
                 </ul>
             </div>          
         </div>
-        <p>University Curriculum</p>
+        <p><b>University Curriculum</b></p>
     </div>
     <div class="r-box-container">
         <div class="r-box">
@@ -221,6 +241,12 @@
 			$('nav ul').toggleClass('active-menu')
 		})
 		})
-		</script>
+        </script>
+        <script>
+            function more_less_details(){
+                var moretext = document.getElementById('more');
+                var mybtn = document.getElementById('mybtn');
+            }
+        </script>
     </body>
 </html>
