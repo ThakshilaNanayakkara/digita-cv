@@ -1,24 +1,18 @@
 <?php
-$name = $_POST['f-name'];
-$email = $_POST['f-email'];
-$topic = $_POST['f-subject'];
+
+$email = $_POST['email'];
+$name = $_POST['name'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
 
-
-$email_from = "tnn@web.com";
-
-$email_subject = "New Submission";
-
-$email_body = "User Name: $name.\n". 
-"User Email: $email.\n". 
-"User Subject: $topic.\n". 
-"User Message: $message.\n";
-
 $to = "thakshilannanayakkara@gmail.com";
-$headers = "From: $email_from \r\n";
-$headers = "Reply-To: $email \r\n";
+$body = "";
 
-mail($to,$email_subject,$email_body, $headers);
-header("Location: Index.html");
+$body .= "Email: ".$email. "\r\n";
+$body .= "From: ".$name. "\r\n";
+$body .= "Message: ".$message. "\r\n";
+
+mail($to, $subject, $body);
+
 
 ?>
